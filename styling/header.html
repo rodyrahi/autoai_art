@@ -19,7 +19,7 @@
         }
 
         .goo {
-            font-size: 8rem;
+            font-size: 5rem;
             line-height: 1.35;
             /* display: inline; */
             box-decoration-break: clone;
@@ -44,7 +44,8 @@
         }
 
         body {
-            padding: 7.5vh 100px 0 100px;
+            padding-top: 5rem;
+            /* padding: 7.5vh 100px 0 100px; */
             font-family: var(--font);
             /* background: var(--color-bg); */
         }
@@ -55,7 +56,7 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        var colors = ['bg-danger' , "bg-primary" , "bg-secondary" , "bg-success" , "bg-warning" , "bg-info"   ]
+        var colors = ['bg-danger' , "bg-primary" , "bg-success" , "bg-warning" , "bg-info"   ]
         var c = colors[Math.floor(Math.random() * colors.length)]
         document.body.classList.add(c)
     })
@@ -64,17 +65,17 @@
 <body class="d-flex container flex-column vh-100 ">
 
 
-    <div class="bg-white rounded-5 row mx-auto" style="width: fit-content; height: fit-content;">
+    <div class=" rounded-5 row  " style="height: 15rem;">
             
-        <h1 class="fw-bold p-0" style=" font-family: 'Rubik', sans-serif;">
-            <div class="goo" contenteditable="true", id="game_name">Game Name</div>
+        <h1 class="fw-bold m-auto bg-light mx-auto rounded-5  " style=" font-family: 'Rubik', sans-serif; width: fit-content;">
+            <div class="goo text-center" contenteditable="true", id="game_name">Game Name</div>
         </h1>
 
     </div>
-    <div class="bg-white rounded-5 row mt-auto mx-auto " style="width: fit-content; height: fit-content; margin-bottom: 8rem;">
+    <div class="bg-white rounded-5 row mt-auto mx-auto " style="width: fit-content; height: fit-content; margin-bottom: 10rem;">
             
         <h1 class="fw-bold p-3 " style=" font-family: 'Rubik', sans-serif; font-size: 5rem;">
-            link in the Discription
+            Gameplay Trailer 
             <!-- <div class="goo" contenteditable="true", id="game_name">Game Name</div> -->
         </h1>
 
